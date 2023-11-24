@@ -39,9 +39,10 @@ code {
 }
 
 .no-items {
-  position: absolute;
-  left: 46%;
-  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 13rem;
 }
 
 .no-items h3 {

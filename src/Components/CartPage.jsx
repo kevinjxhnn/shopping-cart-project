@@ -25,7 +25,7 @@ function CartPage() {
 
       {listOfProducts.length == 0 ? (
         <div className="no-items">
-          <h3>No Items In Cart</h3>
+          <h3>No items added to cart</h3>
         </div>
       ) : (
         <div className="cart-container">{productsElement}</div>

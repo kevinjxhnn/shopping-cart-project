@@ -33,7 +33,7 @@ function ClothesCard(props) {
         />
         <h4>{data.title}</h4>
         <p>${data.price.toFixed(2)}</p>
-        <button className="button-2" onClick={() => handleClick(data.title, `https://shop.polymer-project.org/esm-bundled/${data.image}`, data.price.toFixed(2), )}>Add to cart</button>
+        <button className="button-2" onClick={() => handleClick(data.title, `https://shop.polymer-project.org/esm-bundled/${data.image}`, data.price.toFixed(2), )}>Add To Cart</button>
       </div>
     </>
   ));

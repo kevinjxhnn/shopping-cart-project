@@ -78,6 +78,10 @@ code {
   display: flex;
 }
 
+.button-div button {
+  cursor: pointer;;
+}
+
 .card {
   display: flex;
   flex-direction: row;
@@ -146,21 +150,26 @@ code {
 
 .shopping-cart-container {
   cursor: pointer;
-  display: flex;
   position: fixed;
   right: 2vw;
   top: 3.9vh;
+}
+
+.cart-wrapper-icon{
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .count {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #333736;
+  background-color: #e75858;
   border-radius: 50px;
   color: white;
   width: 25px;
   height: 25px;
+  
 }
 
 .material-symbols-outlined {

@@ -19,6 +19,14 @@ code {
   letter-spacing: 5px;
 }
 
+.items-count{
+  display: flex;
+  justify-content: center;
+  color: grey;
+  font-size: 0.8rem;
+  margin-top: -1rem;
+}
+
 .sub {
   width: 9rem;
   padding: 4px;

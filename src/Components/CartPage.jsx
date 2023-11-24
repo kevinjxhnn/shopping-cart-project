@@ -23,6 +23,8 @@ function CartPage() {
         Your Cart
       </h2>
 
+      {!(listOfProducts.length == 0) ? <p className="items-count">({listOfProducts.length} items in cart)</p> : ""}
+
       {listOfProducts.length == 0 ? (
         <div className="no-items">
           <h3>No items added to cart</h3>

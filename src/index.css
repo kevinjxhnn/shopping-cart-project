@@ -1,13 +1,186 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 5px;
+}
+
+.sub {
+  width: 9rem;
+  padding: 4px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+}
+
+.page--title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-items {
+  position: absolute;
+  left: 46%;
+  top: 50%;
+}
+
+.page-title-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 0;
+}
+
+.page-title-content p {
+  color: grey;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+
+.sub::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+  margin-top: 0.6rem;
+}
+
+.sub:hover::after {
+  border-color: #000;
+}
+
+.image--main {
+  padding: 15px;
+  padding-top: 0;
+}
+
+.button-div {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-top: 1rem;
+}
+
+.card p,
+.cart-content p {
+  color: grey;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+
+.cart-content p {
+  margin-top: -0.8rem;
+}
+
+.card button {
+  margin: 1rem;
+  margin-bottom: 4rem;
+}
+
+.button-2 {
+  background-color: rgba(51, 51, 51, 0.05);
+  border-radius: 8px;
+  border-width: 0;
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.card img {
+  max-width: 30rem;
+  width: 60%;
+  padding-bottom: 5rem;
+}
+
+.card--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card--content {
+  line-height: 0;
+}
+
+.shopping-cart-container {
+  cursor: pointer;
+  display: flex;
+  position: fixed;
+  right: 2vw;
+  top: 3.9vh;
+}
+
+.count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333736;
+  border-radius: 50px;
+  color: white;
+  width: 25px;
+  height: 25px;
+}
+
+.material-symbols-outlined {
+  padding-left: 5px;
+}
+
+.cart-container {
+  margin-top: 1rem;
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cart-content {
+  padding: 20px;
+}
+
+.cart-wrapper {
+  padding: 10px;
+  text-align: center;
 }

@@ -8,7 +8,7 @@ function ShoppingCart() {
   return (
     <div className="cart-wrapper-icon">
       {state.count != 0 && <div className="count">{state.count}</div>}
-      <span className="material-symbols-outlined">shopping_cart</span>
+      <span className="material-symbols-outlined header">shopping_cart</span>
     </div>
   );
 }

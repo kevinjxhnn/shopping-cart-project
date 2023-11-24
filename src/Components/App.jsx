@@ -7,6 +7,7 @@ import ladiesTshirt from "../Data/ladiesTshirt";
 import ClothesCard from "./ClothesCard";
 import ShoppingCart from "./ShoppingCart";
 import CartPage from "./CartPage";
+import { NavigateButtons } from "./NavigateButtons";
 import React from "react";
 
 export const ShoppingCartContext = React.createContext();
@@ -30,23 +31,11 @@ function App() {
           </div>
         </header>
 
-        <div onClick={() => navigate("shopping-cart")} className="shopping-cart-container">
+        <div
+          onClick={() => navigate("shopping-cart")}
+          className="shopping-cart-container"
+        >
           <ShoppingCart />
-        </div>
-
-        <div className="button-div">
-          <button className="sub" onClick={() => navigate("/")}>
-            Men's Outerwear
-          </button>
-          <button className="sub" onClick={() => navigate("ladies-outerwear")}>
-            Ladies Outerwear
-          </button>
-          <button className="sub" onClick={() => navigate("mens-tshirts")}>
-            Men's T-shirts
-          </button>
-          <button className="sub" onClick={() => navigate("ladies-tshirts")}>
-            Ladies T-shirts
-          </button>
         </div>
 
         <Routes>
@@ -54,6 +43,7 @@ function App() {
             path="/"
             element={
               <>
+                <NavigateButtons />
                 <img
                   src="./images/mens_outerwear.jpg"
                   className="image--main"
@@ -69,6 +59,7 @@ function App() {
             path="ladies-outerwear"
             element={
               <>
+                <NavigateButtons />
                 <img
                   src="./images/ladies_outerwear.jpg"
                   className="image--main"
@@ -84,6 +75,7 @@ function App() {
             path="mens-tshirts"
             element={
               <>
+                <NavigateButtons />
                 <img
                   src="./images/ladies_tshirts.jpg"
                   className="image--main"
@@ -99,6 +91,7 @@ function App() {
             path="ladies-tshirts"
             element={
               <>
+                <NavigateButtons />
                 <img
                   src="./images/mens_outerwear.jpg"
                   className="image--main"
@@ -110,11 +103,14 @@ function App() {
               </>
             }
           ></Route>
-          <Route path="shopping-cart" element={
-          <>
-          <CartPage />
-          </>
-          }></Route>
+          <Route
+            path="shopping-cart"
+            element={
+              <>
+                <CartPage />
+              </>
+            }
+          ></Route>
         </Routes>
       </ShoppingCartContext.Provider>
     </div>

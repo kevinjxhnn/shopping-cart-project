@@ -22,11 +22,11 @@ function ClothesCard(props) {
     }));
   }, [state]);
 
-  console.log(state)
 
+  let id = 1;
 
   const cardContent = data.map((data) => (
-    <>
+    <div key={id++}>
       <div className="card--content">
         <img
           src={`https://shop.polymer-project.org/esm-bundled/${data.largeImage}`}
@@ -35,7 +35,7 @@ function ClothesCard(props) {
         <p>${data.price.toFixed(2)}</p>
         <button className="button-2" onClick={() => handleClick(data.title, `https://shop.polymer-project.org/esm-bundled/${data.image}`, data.price.toFixed(2), )}>Add To Cart</button>
       </div>
-    </>
+    </div>
   ));
 
   return (

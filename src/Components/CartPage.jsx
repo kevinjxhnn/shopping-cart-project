@@ -5,9 +5,9 @@ function CartPage() {
   const shoppingCartContext = React.useContext(ShoppingCartContext);
   const state = shoppingCartContext.shoppingCartData;
   const listOfProducts = state.product;
-
+  let id = 0;
   const productsElement = listOfProducts.map((product) => (
-    <div className="cart-wrapper">
+    <div className="cart-wrapper" key={id++}>
       <img src={product.imageUrl} alt={product.title} />
       <div className="cart-content">
         <h4>{product.title}</h4>

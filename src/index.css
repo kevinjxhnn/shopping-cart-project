@@ -89,6 +89,9 @@ code {
 .image--main {
   padding: 15px;
   padding-top: 0;
+  max-width: 100%;
+  object-fit:contain;
+
 }
 
 .button-div {

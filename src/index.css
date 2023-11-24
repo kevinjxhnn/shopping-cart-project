@@ -44,6 +44,10 @@ code {
   top: 50%;
 }
 
+.no-items h3 {
+  color: grey;
+}
+
 .page-title-content {
   display: flex;
   flex-direction: column;
@@ -192,4 +196,16 @@ code {
 .cart-wrapper {
   padding: 10px;
   text-align: center;
+}
+
+.card--heading{
+  padding: 10px;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.material-symbols-outlined.cart{
+  margin-right: 0.5rem;
 }

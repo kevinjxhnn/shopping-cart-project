@@ -16,10 +16,21 @@ function CartPage() {
     </div>
   ));
 
-  return listOfProducts.length == 0 ? (
-    <div className="no-items"><h3>No Items In Cart</h3></div>
-  ) : (
-    <div className="cart-container">{productsElement}</div>
+  return (
+    <>
+      <h2 className="card--heading">
+        <span className="material-symbols-outlined cart">shopping_cart</span>
+        Your Cart
+      </h2>
+
+      {listOfProducts.length == 0 ? (
+        <div className="no-items">
+          <h3>No Items In Cart</h3>
+        </div>
+      ) : (
+        <div className="cart-container">{productsElement}</div>
+      )}
+    </>
   );
 }
 

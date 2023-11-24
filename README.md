@@ -2,6 +2,16 @@
 
 A simple shopping cart project to solidfy concepts of React.
 
+---
+
+## Features.
+
+- Browse items in different categories.
+- Add items to the shopping cart.
+- View the shopping cart page with a list of added items.
+
+---
+
 ## Getting Started.
 
 ### Steps.
@@ -20,4 +30,4 @@ npm install
 ```bash
 npm start
 ```
-
+---
